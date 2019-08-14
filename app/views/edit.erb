@@ -1,4 +1,6 @@
-<h1>Edit Article</h1>
+<html>
+  <body>
+  <h1>Edit Article</h1>
 
 <form action="/articles/<%= @article.id %>" method="POST">
 <input id="hidden" type="hidden" name="_method" value="PATCH">
@@ -10,3 +12,5 @@
       <br />
 <input type="submit" id="submit" name="Submit">
 </form>
+</body>
+</html>
