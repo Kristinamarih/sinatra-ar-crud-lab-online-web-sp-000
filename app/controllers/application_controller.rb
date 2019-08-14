@@ -33,6 +33,8 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/articles/:id/edit' do
+    id = params[:id]
+    @article = Article.all.find{|a| a.id == id}
     erb :edit
   end
 end
