@@ -1,7 +1,9 @@
 
 <form action="patch '/articles/:id'" method="POST">
 <input id="hidden" type="hidden" name="_method" value="PATCH"></input>
+
 <label for="">Title</label>
-   <input type="text" name="title" value="<%= @book_title %>">
+<input type="text" name="title" value="<%= @article.title %>">
+
 <input type="submit" id="submit" name="Submit"></input>
 </form>
