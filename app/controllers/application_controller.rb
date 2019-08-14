@@ -47,6 +47,7 @@ class ApplicationController < Sinatra::Base
   end
   
   delete '/articles/:id' do
+    @article = Article.find
     erb :show
   end
 end
