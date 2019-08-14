@@ -3,11 +3,11 @@
     <h1>Edit Article</h1>
     <form action="/articles/<%= @article.id %>" method="POST">
       <input id="hidden" type="hidden" name="_method" value="PATCH">
-      <label for "name">Title:</label>
-      <input type="text" id="name" name="name" value="<%= @post.name %>">
+      <label for "title">Title:</label>
+      <input type="text" id="name" name="name" value="<%= @article.title %>">
       <br>
       <label for "content">Content:</label>
-      <input type="text" id="content" name="content" value="<%= @post.content %>">
+      <input type="text" id="content" name="content" value="<%= @article.content %>">
       <br>
       <input type="submit" id="submit" name="Submit">
     </form>
