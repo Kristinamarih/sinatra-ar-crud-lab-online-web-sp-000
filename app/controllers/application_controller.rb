@@ -37,4 +37,8 @@ class ApplicationController < Sinatra::Base
     @article = Article.all.find{|a| a.id == id}
     erb :edit
   end
+  
+  patch '/articles/:id' do
+    
+  end
 end
