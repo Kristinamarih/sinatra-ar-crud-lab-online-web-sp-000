@@ -2,7 +2,7 @@
 
 <form action="/articles/<%= @article.id %>" method="POST">
 <input id="hidden" type="hidden" name="_method" value="PATCH">
-<label for "name">Name:</label>
+  <label for "name">Title:</label>
       <input type="text" id="name" name="name" value="<%= @post.name %>">
       <br />
       <label for "content">Content:</label>
