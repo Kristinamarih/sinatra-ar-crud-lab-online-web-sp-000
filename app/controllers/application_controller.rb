@@ -42,6 +42,7 @@ class ApplicationController < Sinatra::Base
     id = params[:id].to_i
     @article = Article.all.find{|a| a.id == id}
     @article.update(title: params[:title], content: params[:content])
+    @article.save
     redirect_to '/articles/:id'
   end
   
