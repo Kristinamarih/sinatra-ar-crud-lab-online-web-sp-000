@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
     id = params[:id].to_i
     @article = Article.all.find{|a| a.id == id}
     @article.update(title: params[:title], content: params[:content])
-    redirect_to '/articles/#{@article.id}'
+    redirect_to '/articles/:id'
   end
   
   delete '/articles/:id' do
