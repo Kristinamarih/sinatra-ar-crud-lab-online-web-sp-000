@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
   
   get '/articles/:id' do
     id = params[:id]
-    @article = Article.all.find{|a| a.id
+    @article = Article.all.find{|a| a.id == id}
     erb :show
   end
   
